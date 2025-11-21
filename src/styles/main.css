@@ -1,0 +1,134 @@
+:root {
+    --sidebar-w: 260px;
+    --gap: 24px;
+    --card-big: #d0d0d0
+}
+
+body {
+    margin: 0;
+    font-family: Inter, system-ui, Arial;
+    background-color: #ffffff;
+}
+
+.app-layout {
+    display: flex;
+    min-height: 100vh;
+}
+
+.category-list {
+    width: var(--sidebar-w);
+    background: #1f1e1e;
+    padding: 28px;
+    box-sizing: border-box;
+    border-right: 1px solid #181616;
+}
+
+.category-list h3 {
+    margin-top: 0;
+}
+
+.category-list ul {
+    list-style: none;
+    padding: 0;
+    margin: 12px, 0;
+}
+
+.category-list li {
+    padding: 12px 6px;
+    cursor: pointer;
+    border-radius: 4px;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    -ms-border-radius: 4px;
+    -o-border-radius: 4px;
+}
+
+.category-list li.active {
+    background: rgba(247, 247, 247, 0.06);
+    font-weight: 600px;
+    color: #b64b6b;
+}
+
+.title {
+    color: rgb(253, 252, 252);
+}
+
+.content {
+    flex: 1;
+    padding: 28px;
+    box-sizing: border-box;
+}
+
+.top-controls {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 12px;
+    color: #181616;
+}
+
+.controls-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 12px;
+    gap: 16px;
+}
+
+.product-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: var(--gap);
+}
+
+.product-card {
+    background: var(--card-bg);
+    padding: 18px;
+    border-radius: 10px;
+    box-sizing: border-box;
+    min-height: 220px;
+    background-color: #2e2b2b;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+}
+
+.product-card .thumb img {
+    width: 80px;
+    height: 80px;
+    object-fit: contain;
+    border-radius: 50%;
+    display: block;
+    margin-bottom: 12px;
+}
+
+.price-old {
+    text-decoration: line-through;
+}
+
+.price-new {
+    font-weight: 700;
+    margin-top: 4px;
+    font-size: 1.1rem;
+}
+
+.category-indicator {
+    color: #181616;
+}
+
+.badge {
+    display: inline-block;
+    margin-left: 8px;
+    background: #b64b6b;
+    color: rgb(10, 10, 10);
+    padding: 2px 6px;
+    border-radius: 4px;
+    font-size: 0.8rem;
+}
+
+.desc {
+    font-size: 0.85rem;
+    color: #fffefe;
+    margin-top: 8px;
+}
